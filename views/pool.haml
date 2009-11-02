@@ -1,0 +1,17 @@
+%h2 Pool Stats
+%table
+  -@stats.each do |key, value|
+    %tr
+      %th=key
+      %td=value
+
+%ul
+-@tubes.each do |pool, tubes|
+  %li
+    Pool
+    =pool
+    %ul
+      -tubes.each do |tube|
+        %li
+          %a{:href=>"/tubes/#{tube}"}=tube
+  

@@ -1,0 +1,8 @@
+%h2==Tube #{@tube}
+%table
+  -@stats.each do |key, value|
+    %tr
+      %th=key
+      %td=value
+%p
+  %a{:href=>'/'} Back to pool
