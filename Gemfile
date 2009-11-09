@@ -1,3 +1,6 @@
 gem 'sinatra'
 gem 'beanstalk-client'
 gem 'haml'
+gem 'dm-core'
+gem 'dm-validations'
+gem 'do_sqlite3'

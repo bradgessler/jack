@@ -1,0 +1,5 @@
+%h2 New Pool
+%form(action="/" method="post")
+  %label{:for=>'pool_host'}
+  %input#pool_host{:type=>"text",:value=>@pool.host,:name=>'host'}
+  %input(type="submit" value="Add Host")

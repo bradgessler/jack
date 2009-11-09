@@ -1,0 +1,7 @@
+%table
+  %tbody
+    -@pools.each do |pool|
+      %tr
+        %td=pool.host
+
+%a(href="/new") New Pool

@@ -1,4 +1,4 @@
-require 'beanstalk'
+require 'jack'
 require 'environment'
 
 run Sinatra::Application
