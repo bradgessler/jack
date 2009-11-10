@@ -1,4 +1,5 @@
-require 'jack'
 require 'environment'
 
-run Sinatra::Application
+map '/' do
+  run Jack::Pools
+end

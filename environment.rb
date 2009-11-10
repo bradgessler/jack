@@ -6,6 +6,11 @@ require 'dm-core'
 require 'dm-validations'
 require 'do_sqlite3'
 
-Dir['./models/*.rb'].each do |model|
+Dir[File.dirname(__FILE__) + '/models/*.rb'].each do |model|
   require model
+end
+
+require 'apps/base'
+Dir[File.dirname(__FILE__) + '/apps/*/*.rb'].each do |app|
+  require app
 end
